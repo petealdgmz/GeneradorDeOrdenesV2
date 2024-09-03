@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5e6; /* Fondo cálido y acogedor */
+    color: #333; /* Texto en color oscuro para buena legibilidad */
+}
+
+/* Contenedores Principales */
+#orderSections {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografía */
+h2, h3 {
+    text-align: center;
+    color: #e67e22; /* Naranja para destacar los títulos */
+}
+
+/* Botones Generales */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e67e22; /* Naranja para botones */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto;
+}
+
+button:hover {
+    background-color: #d35400; /* Naranja más oscuro en hover */
+}
+
+/* Botones de Categoría */
+.categoryBtn {
+    background-color: #d35400; /* Azul para botones de categoría */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.categoryBtn:hover {
+    background-color: #bf8a67; /* Azul más oscuro en hover */
+}
+
+/* Sección de Categorías */
+.categorySection {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Formularios de Selección */
+input[type="number"], select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Resumen de la Orden */
+#orderSummary {
+    background-color: #fff3e0; /* Fondo cálido para el resumen */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#orderList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#orderList li {
+    padding: 10px;
+    border-bottom: 1px solid #e67e22; /* Línea en naranja para los items */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    #orderSections {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    .categoryBtn, button {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    input[type="number"], select {
+        max-width: 90%;
+    }
+
+    #orderSummary {
+        width: 90%;
+    }
+
+    #orderList li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #orderList li button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    button, .categoryBtn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
